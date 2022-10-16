@@ -1,0 +1,428 @@
+portraits = {
+	fluxlight1 = {texturefile = "gfx/models/portraits/alice1.dds" }
+	fluxlight2 = {texturefile = "gfx/models/portraits/alice2.dds" }
+	fluxlight3 = {texturefile = "gfx/models/portraits/alice3.dds" }
+	fluxlight4 = {texturefile = "gfx/models/portraits/alice4.dds" }
+	fluxlight5 = {texturefile = "gfx/models/portraits/alice5.dds" }
+	fluxlight6 = {texturefile = "gfx/models/portraits/annette1.dds" }
+	fluxlight7 = {texturefile = "gfx/models/portraits/annette2.dds" }
+	fluxlight8 = {texturefile = "gfx/models/portraits/asuna1.dds" }
+	fluxlight9 = {texturefile = "gfx/models/portraits/asuna2.dds" }
+	fluxlight10 = {texturefile = "gfx/models/portraits/bercouli.dds" }
+	fluxlight11 = {texturefile = "gfx/models/portraits/cardinal1.dds" }
+	fluxlight12 = {texturefile = "gfx/models/portraits/cardinal2.dds" }
+	fluxlight13 = {texturefile = "gfx/models/portraits/deusolbert.dds" }
+	fluxlight14 = {texturefile = "gfx/models/portraits/eldrie.dds" }
+	fluxlight15 = {texturefile = "gfx/models/portraits/eugeo1.dds" }
+	fluxlight16 = {texturefile = "gfx/models/portraits/eugeo2.dds" }
+	fluxlight17 = {texturefile = "gfx/models/portraits/eugeo3.dds" }
+	fluxlight18 = {texturefile = "gfx/models/portraits/fanatio.dds" }
+	fluxlight19 = {texturefile = "gfx/models/portraits/fizel.dds" }
+	fluxlight20 = {texturefile = "gfx/models/portraits/kirito1.dds" }
+	fluxlight21 = {texturefile = "gfx/models/portraits/kirito2.dds" }
+	fluxlight22 = {texturefile = "gfx/models/portraits/kirito3.dds" }
+	fluxlight23 = {texturefile = "gfx/models/portraits/leafa1.dds" }
+	fluxlight24 = {texturefile = "gfx/models/portraits/leafa2.dds" }
+	fluxlight25 = {texturefile = "gfx/models/portraits/leafa3.dds" }
+	fluxlight26 = {texturefile = "gfx/models/portraits/linel.dds" }
+	fluxlight27 = {texturefile = "gfx/models/portraits/lisbeth1.dds" }
+	fluxlight28 = {texturefile = "gfx/models/portraits/lisbeth2.dds" }
+	fluxlight29 = {texturefile = "gfx/models/portraits/medina1.dds" }
+	fluxlight30 = {texturefile = "gfx/models/portraits/medina2.dds" }
+	fluxlight31 = {texturefile = "gfx/models/portraits/medina3.dds" }
+	fluxlight32 = {texturefile = "gfx/models/portraits/medina4.dds" }
+	fluxlight33 = {texturefile = "gfx/models/portraits/philia1.dds" }
+	fluxlight34 = {texturefile = "gfx/models/portraits/philia2.dds" }
+	fluxlight35 = {texturefile = "gfx/models/portraits/philia3.dds" }
+	fluxlight36 = {texturefile = "gfx/models/portraits/rain1.dds" }
+	fluxlight37 = {texturefile = "gfx/models/portraits/rain2.dds" }
+	fluxlight38 = {texturefile = "gfx/models/portraits/rain3.dds" }
+	fluxlight39 = {texturefile = "gfx/models/portraits/renly1.dds" }
+	fluxlight40 = {texturefile = "gfx/models/portraits/renly2.dds" }
+	fluxlight41 = {texturefile = "gfx/models/portraits/reona.dds" }
+	fluxlight42 = {texturefile = "gfx/models/portraits/ronye1.dds" }
+	fluxlight43 = {texturefile = "gfx/models/portraits/ronye2.dds" }
+	fluxlight44 = {texturefile = "gfx/models/portraits/rue1.dds" }
+	fluxlight45 = {texturefile = "gfx/models/portraits/rue2.dds" }
+	fluxlight46 = {texturefile = "gfx/models/portraits/sakuya1.dds" }
+	fluxlight47 = {texturefile = "gfx/models/portraits/sakuya2.dds" }
+	fluxlight48 = {texturefile = "gfx/models/portraits/scheta1.dds" }
+	fluxlight49 = {texturefile = "gfx/models/portraits/scheta2.dds" }
+	fluxlight50 = {texturefile = "gfx/models/portraits/Selka1.dds" }
+	fluxlight51 = {texturefile = "gfx/models/portraits/Selka2.dds" }
+	fluxlight52 = {texturefile = "gfx/models/portraits/silica1.dds" }
+	fluxlight53 = {texturefile = "gfx/models/portraits/silica2.dds" }
+	fluxlight54 = {texturefile = "gfx/models/portraits/sinon1.dds" }
+	fluxlight55 = {texturefile = "gfx/models/portraits/sinon2.dds" }
+	fluxlight56 = {texturefile = "gfx/models/portraits/sortiliena.dds" }
+	fluxlight57 = {texturefile = "gfx/models/portraits/strea1.dds" }
+	fluxlight58 = {texturefile = "gfx/models/portraits/strea2.dds" }
+	fluxlight59 = {texturefile = "gfx/models/portraits/tiese1.dds" }
+	fluxlight60 = {texturefile = "gfx/models/portraits/tiese2.dds" }
+	fluxlight61 = {texturefile = "gfx/models/portraits/yuna.dds" }
+	fluxlight62 = {texturefile = "gfx/models/portraits/yuuki1.dds" }
+	fluxlight63 = {texturefile = "gfx/models/portraits/yuuki2.dds" }
+	fluxlight64 = {texturefile = "gfx/models/portraits/yuuki3.dds" }
+	fluxlight65 = {texturefile = "gfx/models/portraits/yuuki4.dds" }
+}
+
+portrait_groups = {
+	
+	"fluxlight" = {
+		default = fluxlight5
+		game_setup = {
+			add = {
+				portraits = {
+					fluxlight1
+					fluxlight2
+					fluxlight3
+					fluxlight4
+					fluxlight5
+					fluxlight6
+					fluxlight7
+					fluxlight8
+					fluxlight9
+					fluxlight10
+					fluxlight11
+					fluxlight12
+					fluxlight13
+					fluxlight14
+					fluxlight15
+					fluxlight16
+					fluxlight17
+					fluxlight18
+					fluxlight19
+					fluxlight20
+					fluxlight21
+					fluxlight22
+					fluxlight23
+					fluxlight24
+					fluxlight25
+					fluxlight26
+					fluxlight27
+					fluxlight28
+					fluxlight29
+					fluxlight30
+					fluxlight32
+					fluxlight33
+					fluxlight34
+					fluxlight35
+					fluxlight36
+					fluxlight37
+					fluxlight38
+					fluxlight39
+					fluxlight40
+					fluxlight41
+					fluxlight42
+					fluxlight43
+					fluxlight44
+					fluxlight45
+					fluxlight46
+					fluxlight47
+					fluxlight48
+					fluxlight49
+					fluxlight50
+					fluxlight51
+					fluxlight52
+					fluxlight53
+					fluxlight54
+					fluxlight55
+					fluxlight56
+					fluxlight57
+					fluxlight58
+					fluxlight59
+					fluxlight60
+					fluxlight61
+					fluxlight62
+					fluxlight63
+					fluxlight64
+					fluxlight65
+				}
+			}
+		}
+		#species scope
+		species = {
+			add = {
+				portraits = {
+					fluxlight1
+					fluxlight2
+					fluxlight3
+					fluxlight4
+					fluxlight5
+					fluxlight6
+					fluxlight7
+					fluxlight8
+					fluxlight9
+					fluxlight10
+					fluxlight11
+					fluxlight12
+					fluxlight13
+					fluxlight14
+					fluxlight15
+					fluxlight16
+					fluxlight17
+					fluxlight18
+					fluxlight19
+					fluxlight20
+					fluxlight21
+					fluxlight22
+					fluxlight23
+					fluxlight24
+					fluxlight25
+					fluxlight26
+					fluxlight27
+					fluxlight28
+					fluxlight29
+					fluxlight30
+					fluxlight32
+					fluxlight33
+					fluxlight34
+					fluxlight35
+					fluxlight36
+					fluxlight37
+					fluxlight38
+					fluxlight39
+					fluxlight40
+					fluxlight41
+					fluxlight42
+					fluxlight43
+					fluxlight44
+					fluxlight45
+					fluxlight46
+					fluxlight47
+					fluxlight48
+					fluxlight49
+					fluxlight50
+					fluxlight51
+					fluxlight52
+					fluxlight53
+					fluxlight54
+					fluxlight55
+					fluxlight56
+					fluxlight57
+					fluxlight58
+					fluxlight59
+					fluxlight60
+					fluxlight61
+					fluxlight62
+					fluxlight63
+					fluxlight64
+					fluxlight65
+				}
+			}
+		}
+		#pop scope
+		pop = {
+			add = {
+				portraits = {
+					fluxlight1
+					fluxlight2
+					fluxlight3
+					fluxlight4
+					fluxlight5
+					fluxlight6
+					fluxlight7
+					fluxlight8
+					fluxlight9
+					fluxlight10
+					fluxlight11
+					fluxlight12
+					fluxlight13
+					fluxlight14
+					fluxlight15
+					fluxlight16
+					fluxlight17
+					fluxlight18
+					fluxlight19
+					fluxlight20
+					fluxlight21
+					fluxlight22
+					fluxlight23
+					fluxlight24
+					fluxlight25
+					fluxlight26
+					fluxlight27
+					fluxlight28
+					fluxlight29
+					fluxlight30
+					fluxlight32
+					fluxlight33
+					fluxlight34
+					fluxlight35
+					fluxlight36
+					fluxlight37
+					fluxlight38
+					fluxlight39
+					fluxlight40
+					fluxlight41
+					fluxlight42
+					fluxlight43
+					fluxlight44
+					fluxlight45
+					fluxlight46
+					fluxlight47
+					fluxlight48
+					fluxlight49
+					fluxlight50
+					fluxlight51
+					fluxlight52
+					fluxlight53
+					fluxlight54
+					fluxlight55
+					fluxlight56
+					fluxlight57
+					fluxlight58
+					fluxlight59
+					fluxlight60
+					fluxlight61
+					fluxlight62
+					fluxlight63
+					fluxlight64
+					fluxlight65
+				}
+			}
+		}
+		#leader scope
+		leader = {
+			add = {
+				portraits = {
+					fluxlight1
+					fluxlight2
+					fluxlight3
+					fluxlight4
+					fluxlight5
+					fluxlight6
+					fluxlight7
+					fluxlight8
+					fluxlight9
+					fluxlight10
+					fluxlight11
+					fluxlight12
+					fluxlight13
+					fluxlight14
+					fluxlight15
+					fluxlight16
+					fluxlight17
+					fluxlight18
+					fluxlight19
+					fluxlight20
+					fluxlight21
+					fluxlight22
+					fluxlight23
+					fluxlight24
+					fluxlight25
+					fluxlight26
+					fluxlight27
+					fluxlight28
+					fluxlight29
+					fluxlight30
+					fluxlight32
+					fluxlight33
+					fluxlight34
+					fluxlight35
+					fluxlight36
+					fluxlight37
+					fluxlight38
+					fluxlight39
+					fluxlight40
+					fluxlight41
+					fluxlight42
+					fluxlight43
+					fluxlight44
+					fluxlight45
+					fluxlight46
+					fluxlight47
+					fluxlight48
+					fluxlight49
+					fluxlight50
+					fluxlight51
+					fluxlight52
+					fluxlight53
+					fluxlight54
+					fluxlight55
+					fluxlight56
+					fluxlight57
+					fluxlight58
+					fluxlight59
+					fluxlight60
+					fluxlight61
+					fluxlight62
+					fluxlight63
+					fluxlight64
+					fluxlight65
+				}
+			}
+		}
+		#leader scope
+		ruler = {
+			add = {
+				portraits = {
+					fluxlight1
+					fluxlight2
+					fluxlight3
+					fluxlight4
+					fluxlight5
+					fluxlight6
+					fluxlight7
+					fluxlight8
+					fluxlight9
+					fluxlight10
+					fluxlight11
+					fluxlight12
+					fluxlight13
+					fluxlight14
+					fluxlight15
+					fluxlight16
+					fluxlight17
+					fluxlight18
+					fluxlight19
+					fluxlight20
+					fluxlight21
+					fluxlight22
+					fluxlight23
+					fluxlight24
+					fluxlight25
+					fluxlight26
+					fluxlight27
+					fluxlight28
+					fluxlight29
+					fluxlight30
+					fluxlight32
+					fluxlight33
+					fluxlight34
+					fluxlight35
+					fluxlight36
+					fluxlight37
+					fluxlight38
+					fluxlight39
+					fluxlight40
+					fluxlight41
+					fluxlight42
+					fluxlight43
+					fluxlight44
+					fluxlight45
+					fluxlight46
+					fluxlight47
+					fluxlight48
+					fluxlight49
+					fluxlight50
+					fluxlight51
+					fluxlight52
+					fluxlight53
+					fluxlight54
+					fluxlight55
+					fluxlight56
+					fluxlight57
+					fluxlight58
+					fluxlight59
+					fluxlight60
+					fluxlight61
+					fluxlight62
+					fluxlight63
+					fluxlight64
+					fluxlight65
+				}
+			}
+		}
+	}
+}
