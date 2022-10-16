@@ -1,0 +1,9 @@
+"fluxlight" = {
+	Underworld = {
+		name = "Flux Light"
+		plural = "Flux Lights"
+		home_planet = "Cardinal"
+		home_system = "System Root"
+		name_list = "HUM3"
+	}
+}

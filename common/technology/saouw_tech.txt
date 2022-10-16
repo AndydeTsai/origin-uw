@@ -1,0 +1,288 @@
+tech_uw_refit_church = {
+	cost = @tier5cost3
+	tier = 5
+	area = engineering
+	category = { industry }	
+	prerequisites = { "tech_starbase_3" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_country_flag = uw_seleted
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_country_flag = uw_seleted
+			}
+		}
+	}
+}
+
+tech_uw_planet_shipyard = {
+	cost = @tier3cost3
+	tier = 3
+	area = engineering
+	category = { industry }	
+	prerequisites = { "tech_starbase_3" }
+	weight = @tier3weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_country_flag = uw_seleted
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_country_flag = uw_seleted
+			}
+		}
+	}
+}
+
+tech_uw_planet_shipyard_2 = {
+	cost = @tier4cost3
+	tier = 4
+	area = engineering
+	category = { industry }	
+	prerequisites = { "tech_uw_planet_shipyard" }
+	weight = @tier4weight3
+	
+	#weight_modifier = {
+	#	modifier = {
+	#		factor = 0
+	#		NOT = {
+	#			has_country_flag = uw_seleted
+	#		}
+	#	}
+	#}
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = {
+				has_country_flag = uw_seleted
+			}
+		}
+	}
+}
+
+tech_uw_psi_weapon_gun_small = {
+	cost = @tier5cost3
+	tier = 5
+	area = physics
+	category = { field_manipulation }	
+	#prerequisites = { "tech_starbase_3" }
+	weight = @tier5weight3
+	is_rare = yes
+	
+	potential = {
+		has_country_flag = uw_t2_tech_enabled
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+tech_uw_psi_weapon_gun_large = {
+	cost = @tier5cost3
+	tier = 5
+	area = physics
+	category = { field_manipulation }	
+	prerequisites = { "tech_uw_psi_weapon_gun_small" }
+	weight = @tier5weight3
+	is_rare = yes
+	
+	potential = {
+		has_country_flag = uw_t2_tech_enabled
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 10
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+tech_uw_psi_weapon_gun_xlarge = {
+	cost = @tier5cost3
+	tier = 5
+	area = physics
+	category = { field_manipulation }	
+	prerequisites = { "tech_uw_psi_weapon_gun_large" }
+	weight = @tier5weight3
+	is_rare = yes
+	
+	potential = {
+		has_country_flag = uw_t2_tech_enabled
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 10
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+tech_uw_psi_weapon_torp = {
+	cost = @tier5cost3
+	tier = 5
+	area = engineering
+	category = { propulsion }	
+	#prerequisites = { "tech_starbase_3" }
+	weight = @tier5weight3
+	is_rare = yes
+	
+	potential = {
+		has_country_flag = uw_t2_tech_enabled
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+tech_uw_psi_weapon_craft = {
+	cost = @tier5cost3
+	tier = 5
+	area = engineering
+	category = { voidcraft }	
+	#prerequisites = { "tech_starbase_3" }
+	weight = @tier5weight3
+	is_rare = yes
+	
+	potential = {
+		has_country_flag = uw_t2_tech_enabled
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+tech_uw_psifactory = {
+	cost = @tier5cost3
+	tier = 5
+	area = society
+	category = { psionics }	
+	#prerequisites = { "tech_starbase_3" }
+	weight = @tier5weight3
+	is_rare = yes
+	
+	potential = {
+		has_country_flag = uw_t2_tech_enabled
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+tech_uw_psi_army = {
+	cost = @tier5cost3
+	tier = 5
+	area = society
+	category = { military_theory }
+	#prerequisites = { "tech_starbase_3" }
+	weight = @tier5weight3
+	is_rare = yes
+	
+	potential = {
+		has_country_flag = uw_t2_tech_enabled
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+tech_uw_shiparts = {
+	cost = @tier5cost3
+	tier = 5
+	area = physics
+	category = { field_manipulation }
+	prerequisites = { "tech_uw_psi_weapon_gun_large" }
+	weight = @tier5weight3
+	is_rare = no
+	
+	potential = {
+		has_country_flag = uw_t2_tech_enabled
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+		}
+	}
+}

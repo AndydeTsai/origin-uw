@@ -1,0 +1,378 @@
+building_uw_central_cathedral = {
+	base_buildtime = 2560
+	#capital = yes
+	can_build = no
+	can_demolish = no
+	can_be_disabled = no
+	can_be_ruined = no
+	add_to_first_building_slot = yes
+	category = government
+	potential = {
+		exists = owner
+		owner = { has_country_flag = uw_seleted }
+	}
+	allow = {
+		num_pops >= 1
+	}
+	
+	resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 5000
+            energy = 1000
+        }
+		upkeep = { energy = 10 }
+        produces = {
+            physics_research = 25
+            society_research = 25
+			engineering_research = 25
+			influence = 1
+			unity = 25
+        }
+    }
+	icon = building_uw_central_cathedral
+	#planetary_ftl_inhibitor = yes
+	planet_modifier = {
+		job_high_priest_add = 1
+		job_enforcer_add = 2
+		job_bureaucrat_add = 6
+		job_researcher_add = 2
+		job_priest_add = 2
+		job_soldier_add = 1
+		planet_housing_add = 4
+		pop_ethic_spiritualist_attraction_mult = 0.10
+	}
+	country_modifier = {
+		envoys_add = 1
+	}
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { has_country_flag = uw_seleted }
+	#	}
+	#	text = building_uw_central_cathedral_effect_desc
+	#}
+	upgrades = { "building_uw_central_cathedral_refit" }
+	destroy_trigger = {
+		exists = owner
+		NOT = { owner = { has_country_flag = uw_seleted } }
+	}
+	#on_destroy = { country_event = { id = saouw.220 } }
+}
+
+building_uw_central_cathedral_refit = {
+	base_buildtime = 1440
+	resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 5000
+            energy = 1000
+        }
+        upkeep = { energy = 25 }
+        produces = {
+            physics_research = 50
+            society_research = 50
+			engineering_research = 50
+			influence = 2
+			unity = 50
+        }
+    }
+	prerequisites = { "tech_uw_refit_church" }
+	icon = building_uw_central_cathedral_refit
+	#capital = yes
+	can_build = no
+	can_demolish = no
+	can_be_disabled = no
+	can_be_ruined = no
+	planetary_ftl_inhibitor = yes
+	add_to_first_building_slot = yes
+	category = government
+	planet_modifier = {
+		job_high_priest_add = 2
+		job_enforcer_add = 4
+		job_bureaucrat_add = 10
+		job_researcher_add = 6
+		job_priest_add = 4
+		job_soldier_add = 2
+		planet_housing_add = 8
+		pop_ethic_spiritualist_attraction_mult = 0.20
+	}
+	country_modifier = {
+		envoys_add = 2
+	}
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { has_country_flag = uw_seleted }
+	#	}
+	#	text = building_uw_central_cathedral_refit_effect_desc
+	#}
+	destroy_trigger = {
+		exists = owner
+		NOT = { owner = { has_country_flag = uw_seleted } }
+	}
+	on_built = { owner = { country_event = { id = saouw.210 } } }
+	#on_destroy = { country_event = { id = saouw.220 } }
+}
+
+building_uw_obsidian_castle = {
+	base_buildtime = 2560
+	resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 5000
+            energy = 1000
+        }
+        upkeep = { energy = 2 }
+        produces = {
+            physics_research = 50
+            society_research = 50
+			engineering_research = 50
+			influence = 2
+			unity = 50
+			minerals = 20
+			energy = 20
+        }
+    }
+	icon = building_uw_obsidian_castle
+	can_build = no
+	can_demolish = no
+	can_be_disabled = no
+	can_be_ruined = no
+	planetary_ftl_inhibitor = yes
+	category = unity
+	planet_modifier = {
+		job_culture_worker_add = 1
+		planet_housing_add = 2
+		job_researcher_add = 1
+		planet_amenities_add = 20
+	}
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { has_country_flag = uw_seleted }
+	#	}
+	#	text = building_uw_obsidian_castle_effect_desc
+	#}
+}
+
+building_uw_planetry_shipyard = {
+	base_buildtime = 960
+	base_cap_amount = 1
+	resources = {
+        category = planet_buildings
+        cost = {
+            alloys = 500
+            energy = 1000
+        }
+        upkeep = {
+			alloys = 5
+			energy = 10
+		}
+        produces = {
+			engineering_research = 15
+        }
+    }
+	prerequisites = { "tech_uw_planet_shipyard" }
+	icon = building_uw_planetry_shipyard
+	category = manufacturing
+	planet_modifier = {
+		job_uw_shipbuilder_add = 2
+		planet_housing_add = 1
+	}
+	#triggered_desc = {
+	#	trigger = { exists = owner }
+	#	text = building_uw_planetry_shipyard_effect_desc
+	#}
+	upgrades = { building_uw_planetry_shipyard_2 }
+}
+
+building_uw_planetry_shipyard_2 = {
+	base_buildtime = 720
+	can_build = no
+	#base_cap_amount = 1
+	resources = {
+        category = planet_buildings
+        cost = {
+            alloys = 500
+            energy = 1000
+        }
+        upkeep = {
+			alloys = 10
+			energy = 20
+		}
+        produces = {
+            physics_research = 10
+			engineering_research = 30
+        }
+    }
+	prerequisites = { "tech_uw_planet_shipyard_2" }
+	icon = building_uw_planetry_shipyard_2
+	category = manufacturing
+	planet_modifier = {
+		job_uw_shipbuilder_add = 4
+		planet_housing_add = 2
+	}
+	#triggered_desc = {
+	#	trigger = { exists = owner }
+	#	text = building_uw_planetry_shipyard_2_effect_desc
+	#}
+}
+
+building_uw_centralia = {
+	base_buildtime = 3600
+	resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 10000
+            energy = 10000
+        }
+        upkeep = {
+			minerals = 10
+		}
+        produces = {
+			unity = 50
+			minerals = 40
+			energy = 40
+			food = 40
+        }
+    }
+	planet_modifier = {
+		job_soldier_add = 4
+		job_foundry_add = 5
+		job_artisan_add = 4
+		planet_housing_add = 20
+	}
+	icon = building_uw_centralia
+	add_to_first_building_slot = yes
+	category = army
+	can_build = no
+	can_demolish = no
+	can_be_disabled = no
+	can_be_ruined = no
+	add_to_first_building_slot = yes
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { has_country_flag = uw_seleted }
+	#	}
+	#	text = building_uw_centralia_effect_desc
+	#}
+	destroy_trigger = {
+		exists = owner
+		NOT = { owner = { has_country_flag = uw_seleted } }
+	}
+}
+
+building_uw_psifactory = {
+	base_buildtime = 3600
+	resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 1000
+            energy = 100
+        }
+        upkeep = {
+			minerals = 5
+			energy = 10
+		}
+        produces = {}
+    }
+	planet_modifier = {
+		job_uw_psispecialist_add = 2
+	}
+	prerequisites = { "tech_uw_psifactory" }
+	icon = building_bio_reprocessing_facilities
+	category = manufacturing
+	can_build = yes
+	can_demolish = yes
+	can_be_disabled = yes
+	can_be_ruined = yes
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { has_country_flag = uw_seleted }
+	#	}
+	#	text = building_uw_centralia_effect_desc
+	#}
+	upgrades = { "building_uw_psifactory_2" }
+	destroy_trigger = {
+		exists = owner
+		NOT = { owner = { has_country_flag = uw_seleted } }
+	}
+}
+
+building_uw_psifactory_2 = {
+	base_buildtime = 3600
+	resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 1000
+            energy = 100
+        }
+        upkeep = {
+			minerals = 5
+			energy = 10
+		}
+        produces = {}
+    }
+	planet_modifier = {
+		job_uw_psispecialist_add = 4
+	}
+	prerequisites = { "tech_uw_psifactory" }
+	icon = building_bio_reprocessing_facilities
+	category = manufacturing
+	can_build = no
+	can_demolish = yes
+	can_be_disabled = yes
+	can_be_ruined = yes
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { has_country_flag = uw_seleted }
+	#	}
+	#	text = building_uw_centralia_effect_desc
+	#}
+	upgrades = { "building_uw_psifactory_3" }
+	destroy_trigger = {
+		exists = owner
+		NOT = { owner = { has_country_flag = uw_seleted } }
+	}
+}
+
+building_uw_psifactory_3 = {
+	base_buildtime = 3600
+	resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 1000
+            energy = 100
+        }
+        upkeep = {
+			minerals = 5
+			energy = 10
+		}
+        produces = {}
+    }
+	planet_modifier = {
+		job_uw_psispecialist_add = 8
+	}
+	prerequisites = { "tech_uw_psifactory" }
+	icon = building_bio_reprocessing_facilities
+	category = manufacturing
+	can_build = no
+	can_demolish = yes
+	can_be_disabled = yes
+	can_be_ruined = yes
+	#triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { has_country_flag = uw_seleted }
+	#	}
+	#	text = building_uw_centralia_effect_desc
+	#}
+	destroy_trigger = {
+		exists = owner
+		NOT = { owner = { has_country_flag = uw_seleted } }
+	}
+}

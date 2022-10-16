@@ -1,0 +1,158 @@
+namespace = saouw_arc
+
+#site discovered
+country_event = {
+	id = saouw_arc.0
+	is_triggered_only = yes
+	title = saouw_arc.0.name
+	desc = saouw_arc.0.desc
+	picture = GFX_evt_archaeological_dig
+
+	option = {
+		name = saouw_arc.0.a
+	}
+}
+
+#cosmic ray scan
+fleet_event = {
+	id = saouw_arc.1
+	title = saouw_arc.1.name
+	desc = saouw_arc.1.desc
+
+	is_triggered_only = yes
+	archaeology = yes
+	picture = GFX_saouw_arc_event_1
+
+	option = {
+		name = saouw_arc.1.a
+	}
+}
+
+#gain entry
+fleet_event = {
+	id = saouw_arc.2
+	title = saouw_arc.2.name
+	desc = saouw_arc.2.desc
+
+	is_triggered_only = yes
+	archaeology = yes
+	picture = GFX_saouw_arc_event_2
+
+	option = {
+		name = saouw_arc.2.a
+	}
+}
+
+#what comes before aka frozen knights
+fleet_event = {
+	id = saouw_arc.3
+	title = saouw_arc.3.name
+	desc = saouw_arc.3.desc
+
+	is_triggered_only = yes
+	archaeology = yes
+	picture = GFX_evt_society_research
+
+	option = {
+		#leave them there
+		name = saouw_arc.3.a
+		hidden_effect = {
+			owner = {
+				add_resource = { minor_artifacts = 15 }
+				add_resource = { influence = 150 }
+			}
+		}
+	}
+	option = {
+		#attempt defrost
+		name = saouw_arc.3.b
+		hidden_effect = {
+			owner = {
+				add_resource = { minor_artifacts = 15 }
+				country_event = { id = saouw.100 }
+			}
+		}
+	}
+}
+
+#peeking the past
+fleet_event = {
+	id = saouw_arc.4
+	title = saouw_arc.4.name
+	desc = saouw_arc.4.desc
+
+	is_triggered_only = yes
+	archaeology = yes
+	picture = GFX_saouw_arc_event_4
+
+	option = {
+		name = saouw_arc.4.a
+		hidden_effect = {
+			owner = {
+				add_resource = { minor_artifacts = 15 }
+			}
+		}
+	}
+}
+
+#the great battle aka untold story
+fleet_event = {
+	id = saouw_arc.5
+	title = saouw_arc.5.name
+	desc = saouw_arc.5.desc
+
+	is_triggered_only = yes
+	archaeology = yes
+	picture = GFX_saouw_arc_event_5
+
+	option = {
+		name = saouw_arc.5.a
+		hidden_effect = {
+			owner = {
+				add_resource = { minor_artifacts = 15 }
+				country_event = { id = saouw.111 }
+			}
+		}
+	}
+}
+
+#the void in tower aka grand library aka syslog
+fleet_event = {
+	id = saouw_arc.6
+	title = saouw_arc.6.name
+	desc = saouw_arc.6.desc
+
+	is_triggered_only = yes
+	archaeology = yes
+	picture = GFX_saouw_arc_event_6
+
+	option = {
+		name = saouw_arc.6.a
+		hidden_effect = {
+			owner = {
+				add_resource = { minor_artifacts = 500 }
+			}
+		}
+	}
+}
+
+#the special trio aka L80
+fleet_event = {
+	id = saouw_arc.7
+	title = saouw_arc.7.name
+	desc = saouw_arc.7.desc
+
+	is_triggered_only = yes
+	archaeology = yes
+	picture = GFX_saouw_arc_event_7
+
+	option = {
+		name = saouw_arc.7.a
+		hidden_effect = {
+			owner = {
+				set_country_flag = uw_site_finished
+				country_event = { id = saouw.1000 days = 3600 }
+			}
+		}
+	}
+}

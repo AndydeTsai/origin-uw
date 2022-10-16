@@ -1,0 +1,1100 @@
+weapon_component_template = {
+	key = "SMALL_UW_P_LASER"
+	size = point_defence
+	type = point_defence
+	entity = "invisible_turret_entity"
+	
+	icon = "SMALL_UW_P_LASER"
+	icon_frame = 1
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 13
+			rare_crystals = 1
+			sr_zro = 1
+		}		
+		upkeep = {
+			energy = 0.08
+			alloys = 0.13
+			rare_crystals = 0.02
+			sr_zro = 0.01
+		}
+	}
+	
+	power = -15
+	damage = { min = 4 max = 12 }
+	windup = { min = 0 max = 0 }
+	total_fire_time = 3
+	hull_damage = 1.0
+	shield_damage = 1.0
+	armor_damage = 1.0
+	shield_penetration = 1.0
+	armor_penetration = 0.0
+	tracking = 0.50
+	range = 40.00
+	accuracy = 0.75
+	
+	prerequisites = { "tech_uw_psi_weapon_gun_small" }
+	component_set = "SMALL_UW_P_LASER"
+	projectile_gfx = "blue_laser_pd"
+	tags = { weapon_type_point_defense weapon_type_energy }
+	ai_tags = { weapon_role_point_defense }
+	ai_tag_weight = 0
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+weapon_component_template = {
+	key = "SMALL_UW_S_LASER"
+	size = small
+	type = instant
+	entity = "small_laser_gun_entity"
+	
+	icon = "SMALL_UW_S_LASER"
+	icon_frame = 1
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+			rare_crystals = 2
+			sr_zro = 1
+		}		
+		upkeep = {
+			energy = 0.1
+			alloys = 0.3
+			rare_crystals = 0.05
+			sr_zro = 0.02
+		}
+	}
+	
+	power = -20
+	damage = { min = 20 max = 60 }
+	windup = { min = 2 max = 10 }
+	total_fire_time = 15
+	hull_damage = 1.5
+	shield_damage = 0.5
+	armor_damage = 1.0
+	shield_penetration = 1.0
+	armor_penetration = 0.0
+	tracking = 0.80
+	range = 60.00
+	accuracy = 1.00
+	
+	prerequisites = { "tech_uw_psi_weapon_gun_small" }
+	component_set = "SMALL_UW_S_LASER"
+	projectile_gfx = "blue_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_hull }
+	ai_tag_weight = 0
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+weapon_component_template = {
+	key = "SMALL_UW_M_LASER"
+	size = medium
+	type = instant
+	entity = "medium_laser_gun_entity"
+	
+	icon = "SMALL_UW_M_LASER"
+	icon_frame = 1
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 60
+			rare_crystals = 5
+			sr_zro = 2
+		}		
+		upkeep = {
+			energy = 0.3
+			alloys = 0.5
+			rare_crystals = 0.07
+			sr_zro = 0.05
+		}
+	}
+	
+	power = -45
+	damage = { min = 50 max = 150 }
+	windup = { min = 2 max = 10 }
+	total_fire_time = 25
+	hull_damage = 1.5
+	shield_damage = 0.75
+	armor_damage = 1.0
+	shield_penetration = 1.0
+	armor_penetration = 0.25
+	tracking = 0.55
+	range = 85.00
+	accuracy = 1.00
+	
+	prerequisites = { "tech_uw_psi_weapon_gun_small" }
+	component_set = "SMALL_UW_M_LASER"
+	projectile_gfx = "blue_laser_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_hull }
+	ai_tag_weight = 0
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+weapon_component_template = {
+	key = "SMALL_UW_L_LASER"
+	size = large
+	type = instant
+	entity = "large_laser_gun_entity"
+	
+	icon = "SMALL_UW_L_LASER"
+	icon_frame = 1
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 100
+			rare_crystals = 7
+			sr_zro = 5
+		}		
+		upkeep = {
+			energy = 0.5
+			alloys = 0.8
+			rare_crystals = 0.1
+			sr_zro = 0.1
+		}
+	}
+	
+	power = -60
+	damage = { min = 150 max = 350 }
+	windup = { min = 2 max = 10 }
+	total_fire_time = 35
+	hull_damage = 1.5
+	shield_damage = 1.0
+	armor_damage = 1.0
+	shield_penetration = 1.0
+	armor_penetration = 0.5
+	tracking = 0.35
+	range = 115.00
+	accuracy = 1.00
+	
+	prerequisites = { "tech_uw_psi_weapon_gun_large" }
+	component_set = "SMALL_UW_L_LASER"
+	projectile_gfx = "blue_laser_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_hull }
+	ai_tag_weight = 0
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+weapon_component_template = {
+	key = "SMALL_UW_XL_LASER"
+	size = extra_large
+	type = instant
+	
+	icon = "SMALL_UW_XL_LASER"
+	icon_frame = 1
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 300
+			rare_crystals = 25
+			sr_zro = 10
+		}		
+		upkeep = {
+			energy = 5
+			alloys = 8
+			rare_crystals = 1
+			sr_zro = 0.15
+		}
+	}
+	
+	firing_arc = 30.0
+	min_range = 1.0
+	static_rotation = no
+	
+	power = -250
+	damage = { min = 1500 max = 3500 }
+	windup = { min = 2 max = 10 }
+	total_fire_time = 70
+	hull_damage = 2.5
+	shield_damage = 1.0
+	armor_damage = 1.5
+	shield_penetration = 1.0
+	armor_penetration = 0.5
+	tracking = 0.0
+	range = 170.00
+	accuracy = 1.00
+	
+	prerequisites = { "tech_uw_psi_weapon_gun_large" }
+	component_set = "SMALL_UW_XL_LASER"
+	projectile_gfx = "X_laser_T1"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+weapon_component_template = {
+	key = "SMALL_UW_T_LASER"
+	size = titanic
+	type = instant
+	
+	icon = "SMALL_UW_T_LASER"
+	icon_frame = 1
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 500
+			rare_crystals = 40
+			sr_zro = 20
+		}		
+		upkeep = {
+			energy = 8
+			alloys = 12
+			rare_crystals = 2
+			sr_zro = 0.25
+		}
+	}
+	
+	firing_arc = 30.0
+	min_range = 1.0
+	static_rotation = no
+	use_ship_kill_target = no
+	
+	power = -450
+	damage = { min = 6000 max = 12000 }
+	windup = { min = 20 max = 35 }
+	total_fire_time = 120
+	hull_damage = 3.5
+	shield_damage = 1.5
+	armor_damage = 2.5
+	shield_penetration = 1.0
+	armor_penetration = 0.75
+	tracking = 0.0
+	range = 265.00
+	accuracy = 1.00
+	
+	prerequisites = { "tech_uw_psi_weapon_gun_xlarge" }
+	component_set = "SMALL_UW_T_LASER"
+	projectile_gfx = "T_laser_T1"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+weapon_component_template = {
+	key = "TORPEDO_UW_G_LASER"
+	size = torpedo
+	entity = "turret_torpedo_entity"
+	
+	icon = "TORPEDO_UW_G_LASER"
+	icon_frame = 1
+	type = missile
+	
+	prerequisites = { "tech_torpedoes_3" }
+	projectile_gfx = "large_torpedo_03"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_shield }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 70
+			volatile_motes = 2.5
+			sr_zro = 1.5
+		}		
+		upkeep = {
+			energy = 0.5
+			alloys = 0.1
+			volatile_motes = 0.02
+			sr_zro = 0.1
+		}
+	}
+	
+	power = -35
+	damage = { min = 300 max = 500 }
+	windup = { min = 5 max = 25 }
+	total_fire_time = 30
+	hull_damage = 2.00
+	shield_damage = 0.0
+	armor_damage = 1.25
+	shield_penetration = 1.0
+	armor_penetration = 1.0
+	tracking = 0.40
+	range = 250.00
+	accuracy = 1.00
+	missile_health = 150
+	missile_shield = 50
+	missile_armor = 50
+	missile_evasion = 0.5
+	missile_retarget_range = 100
+	missile_speed = 900
+	
+	prerequisites = { tech_uw_psi_weapon_torp } 
+	component_set = "TORPEDO_UW_G_LASER"	
+	projectile_gfx = "large_torpedo"							
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_shield }	
+	ai_tag_weight = 0
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+strike_craft_component_template = {
+	key = "HANGAR_UW_H_LASER"
+	size = LARGE
+	entity = "fighter_entity"
+	weapon_type = instant
+	projectile_gfx = "strike_craft_laser_1"
+	power = -15
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 85
+			exotic_gases = 10
+			sr_zro = 1
+		}
+		upkeep = {
+			energy = 0.75
+			exotic_gases = 0.2
+			alloys = 0.2
+			sr_zro = 1
+		}
+	}
+	
+	count = 16
+	regeneration_per_day = 2
+	launch_time = 1
+	damage = { min = 20 max = 40 }
+	cooldown = 2.0
+	range = 25
+	engagement_range = 300
+	accuracy = 1.00
+	tracking = 0.70
+	health = 85
+	armor = 25
+	shield = 120
+
+	evasion = 0.75
+	speed = 900
+	rotation_speed = 0.8
+	acceleration = 1.25
+
+	hull_damage = 1.25
+	shield_damage = 1.0
+	armor_damage = 1.5
+	shield_penetration = 1.0
+	armor_penetration = 0.15
+
+	ship_behavior = "bombers_behavior"
+	icon = "HANGAR_UW_H_LASER"
+	icon_frame = 1
+	component_set = "HANGAR_UW_H_LASER"
+	
+	prerequisites = { "tech_uw_psi_weapon_craft" }
+	tags = { weapon_type_strike_craft }
+	ai_tags = { weapon_role_point_defense }
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+################
+# Zro Reactors #
+################
+
+utility_component_template = {
+	key = "CORVETTE_SAOUW_REACTOR"
+	size = small
+	icon = "SAOUW_REACTOR"
+	icon_frame = 1
+	power = 350
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 45
+			sr_zro = 1
+		}
+		upkeep = {
+			energy = 0.37
+			alloys = 0.037
+			sr_zro = 0.01
+		}
+	}
+
+	prerequisites = { "tech_uw_shiparts" }
+	component_set = "power_core"
+	size_restriction = { corvette colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette }
+
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_SAOUW_REACTOR"
+	size = small
+	icon = "SAOUW_REACTOR"
+	icon_frame = 1
+	power = 700
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 85
+			sr_zro = 1.5
+		}
+		upkeep = {
+			energy = 0.74
+			alloys = 0.074
+			sr_zro = 0.05
+		}
+	}
+
+	prerequisites = { "tech_uw_shiparts" }
+	component_set = "power_core"
+	size_restriction = { destroyer crisis_destroyer }
+
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_SAOUW_REACTOR"
+	size = small
+	icon = "SAOUW_REACTOR"
+	icon_frame = 1
+	power = 1350
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 165
+			sr_zro = 3
+		}
+		upkeep = {
+			energy = 1.48
+			alloys = 0.148
+			sr_zro = 0.07
+		}
+	}
+
+	prerequisites = { "tech_uw_shiparts" }
+	component_set = "power_core"
+	size_restriction = { cruiser crisis_cruiser }
+
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_SAOUW_REACTOR"
+	size = small
+	icon = "SAOUW_REACTOR"
+	icon_frame = 1
+	power = 2500
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 305
+			sr_zro = 5
+		}
+		upkeep = {
+			energy = 2.98
+			alloys = 0.298
+			sr_zro = 0.1
+		}
+	}
+
+	prerequisites = { "tech_uw_shiparts" }
+	component_set = "power_core"
+	size_restriction = { battleship }
+
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_SAOUW_REACTOR"
+	size = small
+	icon = "SAOUW_REACTOR"
+	icon_frame = 1
+	power = 5000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 625
+			sr_zro = 10
+		}
+		upkeep = {
+			energy = 5.93
+			alloys = 0.593
+			sr_zro = 0.5
+		}
+	}
+
+	prerequisites = { "tech_uw_shiparts" }
+	component_set = "power_core"
+	size_restriction = { titan }
+
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "COLOSSUS_SAOUW_REACTOR"
+	size = small
+	icon = "SAOUW_REACTOR"
+	icon_frame = 1
+	power = 12500
+	resources = {
+		category = ship_components
+		cost = {
+			sr_zro = 15
+		}
+		upkeep = {
+			alloys = 0.593
+			sr_zro = 1.5
+		}
+	}
+
+	prerequisites = { "tech_uw_shiparts" }
+	component_set = "power_core"
+	size_restriction = { colossus star_eater }
+
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "PLATFORM_SAOUW_REACTOR"
+	size = large
+	icon = "SAOUW_REACTOR"
+	icon_frame = 1
+	power = 5000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 90
+			sr_zro = 1
+		}
+		upkeep = {
+			energy = 0.74
+			alloys = 0.074
+			sr_zro = 0.01
+		}
+	}
+
+	prerequisites = { "tech_uw_shiparts" }
+	component_set = "power_core"
+	class_restriction = { shipclass_military_station }
+	size_restriction = {
+		military_station_small
+		military_station_medium
+		military_station_large
+	}
+
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "ION_CANNON_SAOUW_REACTOR"
+	size = small
+	icon = "SAOUW_REACTOR"
+	icon_frame = 1
+	power = 1500
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 165
+			sr_zro = 1
+		}
+	}
+
+	prerequisites = { "tech_uw_shiparts" }
+	component_set = "power_core"
+	size_restriction = { ion_cannon }
+
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "STARBASE_SAOUW_REACTOR"
+	size = large
+	icon = "SAOUW_REACTOR"
+	icon_frame = 1
+	power = 8000
+
+	prerequisites = { "tech_uw_shiparts" }
+	component_set = "power_core"
+	class_restriction = { shipclass_starbase }
+	size_restriction = {
+		starbase_outpost
+		starbase_starport
+		starbase_starhold
+		starbase_starfortress
+		starbase_citadel
+		juggernaut
+	}
+
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+###############
+# Zro Shields #
+###############
+
+utility_component_template = {
+	key = "SAOUW_SMALL_SHIELD"
+	size = small
+	icon = "SAOUW_SHIELD"
+	icon_frame = 1
+	power = @power_S6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t6_cost
+			sr_zro = 0.25
+		}
+		upkeep = {
+			alloys = @shield_s_t6_upkeep_alloys
+			sr_zro = 0.01
+		}
+	}
+	modifier = {
+		ship_shield_add = 400
+		ship_shield_regen_add_static = 3
+	}
+	prerequisites = { "tech_uw_shiparts" }
+	component_set = "SAOUW_SHIELD"
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SAOUW_MEDIUM_SHIELD"
+	size = medium
+	icon = "SAOUW_SHIELD"
+	icon_frame = 1
+	power = @power_M6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t6_cost
+			sr_zro = 0.5
+		}
+		upkeep = {
+			alloys = @shield_m_t6_upkeep_alloys
+			sr_zro = 0.05
+		}
+	}
+	modifier = {
+		ship_shield_add = 1000
+		ship_shield_regen_add_static = 8
+	}
+	prerequisites = { "tech_uw_shiparts" }
+	component_set = "SAOUW_SHIELD"
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SAOUW_LARGE_SHIELD"
+	size = large
+	icon = "SAOUW_SHIELD"
+	icon_frame = 1
+	power = @power_L6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t6_cost
+			sr_zro = 1
+		}
+		upkeep = {
+			alloys = @shield_l_t6_upkeep_alloys
+			sr_zro = 0.1
+		}
+	}
+	modifier = {
+		ship_shield_add = 2000
+		ship_shield_regen_add_static = 15
+	}
+	prerequisites = { "tech_uw_shiparts" }
+	component_set = "SAOUW_SHIELD"
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+#############
+# Zro Armor #
+#############
+
+utility_component_template = {
+	key = "SAOUW_SMALL_ARMOR"
+	size = small
+	icon = "SAOUW_ARMOR"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = 350
+	}
+	
+	prerequisites = { "tech_uw_shiparts" }
+	component_set = "SAOUW_ARMOR"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t6_cost
+			sr_zro = 0.5
+		}		
+		upkeep = {
+			alloys = @s_t6_upkeep_alloys
+			sr_zro = 0.05
+		}
+	}
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SAOUW_MEDIUM_ARMOR"
+	size = medium
+	icon = "SAOUW_ARMOR"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = 900
+	}
+	
+	prerequisites = { "tech_uw_shiparts" }
+	component_set = "SAOUW_ARMOR"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t6_cost
+			sr_zro = 1
+		}		
+		upkeep = {
+			alloys = @m_t6_upkeep_alloys
+			sr_zro = 0.1
+		}
+	}
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SAOUW_LARGE_ARMOR"
+	size = large
+	icon = "SAOUW_ARMOR"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = 1850
+	}
+	
+	prerequisites = { "tech_uw_shiparts" }
+	component_set = "SAOUW_ARMOR"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t6_cost
+			sr_zro = 2
+		}		
+		upkeep = {
+			alloys = @l_t6_upkeep_alloys
+			sr_zro = 0.2
+		}
+	}
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+################
+# Zro Thruster #
+################
+
+utility_component_template = {
+	key = "SAOUW_THRUSTER"
+	size = small
+	icon = "SAOUW_THRUSTER"
+	icon_frame = 1
+	power = 50
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 15
+			sr_zro = 1
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.5
+		ship_evasion_add = 40
+	}
+
+	prerequisites = { "tech_uw_shiparts" }
+	component_set = "thruster_components"
+	size_restriction = { corvette colonizer sponsored_colonizer constructor science transport }
+	
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SAOUW_DESTROYER_THRUSTER"
+	size = small
+	icon = "SAOUW_THRUSTER"
+	icon_frame = 1
+	power = 80
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+			sr_zro = 2
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.5
+		ship_evasion_add = 28
+	}
+
+	prerequisites = { "tech_uw_shiparts" }
+	component_set = "thruster_components"
+	size_restriction = { destroyer }
+	
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SAOUW_CRUISER_THRUSTER"
+	size = small
+	icon = "SAOUW_THRUSTER"
+	icon_frame = 1
+	power = 150
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 60
+			sr_zro = 4
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.5
+		ship_evasion_add = 20
+	}
+
+	prerequisites = { "tech_uw_shiparts" }
+	component_set = "thruster_components"
+	size_restriction = { cruiser }
+	
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SAOUW_BATTLESHIP_THRUSTER"
+	size = small
+	icon = "SAOUW_THRUSTER"
+	icon_frame = 1
+	power = 300
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 120
+			sr_zro = 8
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.5
+		ship_evasion_add = 12
+	}
+
+	prerequisites = { "tech_uw_shiparts" }
+	component_set = "thruster_components"
+	size_restriction = { battleship }
+	
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SAOUW_TITAN_THRUSTER"
+	size = small
+	icon = "SAOUW_THRUSTER"
+	icon_frame = 1
+	power = 600
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 240
+			sr_zro = 16
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.5
+		ship_evasion_add = 6
+	}
+
+	prerequisites = { "tech_uw_shiparts" }
+	component_set = "thruster_components"
+	size_restriction = { titan }
+	
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}
+
+
+utility_component_template = {
+	key = "SAOUW_COLOSSUS_THRUSTER"
+	size = small
+	icon = "SAOUW_THRUSTER"
+	icon_frame = 1
+	power = 750
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 300
+			sr_zro = 32
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.5
+	}
+
+	prerequisites = { "tech_uw_shiparts" }
+	component_set = "thruster_components"
+	size_restriction = { colossus juggernaut star_eater }
+	
+	ai_weight = {
+		weight = 7
+
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+	}
+}

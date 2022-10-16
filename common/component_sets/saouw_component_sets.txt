@@ -1,0 +1,70 @@
+component_set = {
+	key = "SMALL_UW_P_LASER"
+	
+	icon = "SMALL_UW_P_LASER"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SMALL_UW_S_LASER"
+	
+	icon = "SMALL_UW_S_LASER"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SMALL_UW_M_LASER"
+	
+	icon = "SMALL_UW_M_LASER"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SMALL_UW_L_LASER"
+	
+	icon = "SMALL_UW_L_LASER"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SMALL_UW_XL_LASER"
+	
+	icon = "SMALL_UW_XL_LASER"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SMALL_UW_T_LASER"
+	
+	icon = "SMALL_UW_T_LASER"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "TORPEDO_UW_G_LASER"
+	
+	icon = "TORPEDO_UW_G_LASER"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "HANGAR_UW_H_LASER"
+	
+	icon = "HANGAR_UW_H_LASER"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SAOUW_SHIELD"
+	
+	icon = "SAOUW_SHIELD"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SAOUW_ARMOR"
+	
+	icon = "SAOUW_ARMOR"
+	icon_frame = 1
+}
+

@@ -1,0 +1,126 @@
+leader_trait_uw_oldsynth = {
+	cost = 100
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/uw_trait_oldsynth.dds"
+	initial = no
+	randomized = no
+	modification = no
+	immortal_leaders = yes
+	modifier = {
+		all_technology_research_speed = 0.1
+		army_defense_damage_mult = 0.2
+		army_morale = 0.25
+		army_morale_damage_mult = 0.15
+		country_base_influence_produces_add = 1
+		deposit_blockers_cost_mult = -0.15
+		planet_bureaucrats_produces_mult = 0.10
+		planet_stability_add = 15
+		pop_government_ethic_attraction = 0.20
+		ship_archaeological_site_excavation_speed_mult = 0.25
+		ship_fire_rate_mult = 0.1
+		ship_speed_mult = 0.1
+		ship_weapon_damage = 0.1
+		ship_weapon_range_mult = 0.2
+		terraform_speed_mult = 0.25
+	}
+	custom_tooltip = "leader_trait_uw_oldsynth_desc"
+	leader_potential_add = {
+		FROM = { has_country_flag = uw_site_finished }
+	}
+	leader_class = { admiral scientist general governor }
+	leader_trait = all
+	
+	ai_categories = {
+		engineering
+		physics
+		society
+		survey
+	}
+	
+	ai_weight = {
+		weight = 50
+	}
+}
+
+leader_trait_uw_newsynth = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/uw_trait_newsynth.dds"
+	initial = yes
+	modification = no
+	modifier = {
+		all_technology_research_speed = 0.1
+		army_defense_damage_mult = 0.1
+		army_morale = 0.15
+		army_morale_damage_mult = 0.1
+		country_base_influence_produces_add = 1
+		planet_stability_add = 10
+		pop_government_ethic_attraction = 0.15
+		ship_archaeological_site_excavation_speed_mult = 0.1
+		ship_fire_rate_mult = 0.1
+		ship_speed_mult = 0.1
+		ship_weapon_damage = 0.1
+		ship_weapon_range_mult = 0.1
+	}
+	self_modifier = {
+		leader_age = 40
+	}
+	custom_tooltip = "leader_trait_uw_newsynth_desc"
+	leader_potential_add = {
+		FROM = { has_ascension_perk = ap_saouw_army }
+	}
+	leader_class = { admiral scientist general governor }
+	leader_trait = all
+	
+	ai_categories = {
+		engineering
+		physics
+		society
+		survey
+	}
+	
+	ai_weight = {
+		weight = 50
+	}
+}
+
+leader_trait_uw_synthsp = {
+	cost = 100
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/uw_trait_synthsp.dds"
+	initial = no
+	randomized = no
+	modification = no
+	immortal_leaders = yes
+	modifier = {
+		army_defense_damage_mult = 0.25
+		army_morale = 0.3
+		army_morale_damage_mult = 0.2
+		country_base_influence_produces_add = 1
+		deposit_blockers_cost_mult = -0.15
+		planet_bureaucrats_produces_mult = 0.15
+		planet_stability_add = 20
+		pop_government_ethic_attraction = 0.25
+		ship_fire_rate_mult = 0.2
+		ship_speed_mult = 0.2
+		ship_weapon_damage = 0.2
+		ship_weapon_range_mult = 0.25
+	}
+	custom_tooltip = "leader_trait_uw_synthsp_desc"
+	leader_potential_add = {
+		FROM = { has_country_flag = uw_site_finished }
+	}
+	leader_class = { admiral scientist general governor }
+	leader_trait = all
+	
+	ai_categories = {
+		engineering
+		physics
+		society
+		survey
+	}
+	
+	ai_weight = {
+		weight = 50
+	}
+}

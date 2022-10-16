@@ -1,0 +1,70 @@
+saouw_digsite = {
+	desc = "saouw_digsite_intro"
+	picture = GFX_evt_archaeological_dig
+	stages = 7
+	max_instances = 1
+	allow = {
+		is_ship_class = shipclass_science_ship
+		exists = leader
+	}
+
+	visible = {
+		default_site_visible_trigger = yes
+	}
+	on_visible = {
+		country_event = {
+			id = saouw_arc.0
+		}
+	}
+
+	stage = {
+		#cosmic ray scan
+		difficulty = 1
+		icon = GFX_archaeology_runes_A1
+		event = saouw_arc.1
+	}
+	stage = {
+		#gain entry
+		difficulty = 5
+		icon = GFX_archaeology_runes_A2
+		event = saouw_arc.2
+	}
+	stage = {
+		#what comes before
+		difficulty = 3
+		icon = GFX_archaeology_runes_A3
+		event = saouw_arc.3
+	}
+	stage = {
+		#peeking the past
+		difficulty = 5
+		icon = GFX_archaeology_runes_A4
+		event = saouw_arc.4
+	}
+	stage = {
+		#the great battle aka untold story
+		difficulty = 5
+		icon = GFX_archaeology_runes_A5
+		event = saouw_arc.5
+	}
+	stage = {
+		#the void in tower aka grand library aka syslog
+		difficulty = 5
+		icon = GFX_archaeology_runes_F1
+		event = saouw_arc.6
+	}
+	stage = {
+		#the special trio aka L80
+		difficulty = 3
+		icon = GFX_archaeology_runes_F1
+		event = saouw_arc.7
+	}
+
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { 
+				RANDOM_EVENTS = all_random_events 
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+decision_saouw_shipyard = {
+	owned_planets_only = yes
+	icon = saouw_shipyard
+
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = { }
+	}
+
+	potential = {
+		NOT = { has_building = building_uw_planetry_shipyard_2 }
+		NOT = { has_planet_flag = saouw_shipyard_cooldown }
+		has_building = building_uw_planetry_shipyard
+	}
+
+	effect = {
+		custom_tooltip = decision_saouw_shipyard_effects_short
+		hidden_effect = {
+			from = { country_event = { id = saouw.300 } }
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+decision_saouw_shipyard_2 = {
+	owned_planets_only = yes
+	icon = saouw_shipyard
+
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = { }
+	}
+
+	potential = {
+		NOT = { has_planet_flag = saouw_shipyard_cooldown }
+		has_building = building_uw_planetry_shipyard_2
+	}
+
+	effect = {
+		custom_tooltip = decision_saouw_shipyard_effects_short
+		hidden_effect = {
+			from = { country_event = { id = saouw.310 } }
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}

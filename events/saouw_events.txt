@@ -1,0 +1,1031 @@
+namespace = saouw
+
+#######################################################################
+#Game start
+event = {
+	id = saouw.1
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		every_country = {
+			limit = {
+                has_country_flag = uw_seleted
+            }
+            country_event = { id = saouw.2 }
+            country_event = { id = saouw.3 }
+			planet_event = { id = saouw.5 }
+		}
+	}
+}
+
+country_event = {
+	id = saouw.2
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		give_technology = { tech = "tech_uw_planet_shipyard" message = no }
+		give_technology = { tech = "tech_destroyers" message = no }
+		give_technology = { tech = "tech_lasers_2" message = no }
+		give_technology = { tech = "tech_fusion_power" message = no }
+		give_technology = { tech = "tech_administrative_ai" message = no }
+		give_technology = { tech = "tech_genome_mapping" message = no }
+		give_technology = { tech = "tech_doctrine_fleet_size_1" message = no }
+		give_technology = { tech = "tech_centralized_command" message = no }
+		#give_technology = { tech = "tech_adaptive_combat_algorithms" message = no }
+		give_technology = { tech = "tech_psionic_theory" message = no }
+		give_technology = { tech = "tech_alloys_1" message = no }
+		give_technology = { tech = "tech_luxuries_1" message = no }
+		force_add_civic = civic_saouw_civic1
+		force_add_civic = civic_saouw_civic2
+	}
+}
+
+country_event = {
+	id = saouw.3
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		capital_scope = {
+			#owner = { save_event_target_as = saouw_country }
+			clear_deposits
+			remove_all_buildings
+			add_building = building_capital
+			add_building = building_uw_central_cathedral
+			add_building = building_uw_obsidian_castle
+			add_building = building_uw_planetry_shipyard
+			add_building = building_uw_centralia
+			add_deposit = d_fertile_lands
+			add_deposit = d_fertile_lands
+			add_deposit = d_fertile_lands
+			add_deposit = d_fertile_lands
+			add_deposit = d_rich_mountain
+			add_deposit = d_rich_mountain
+			add_deposit = d_searing_desert
+			add_deposit = d_searing_desert
+			add_deposit = d_teeming_reef
+			add_deposit = d_alien_pets_deposit
+			add_deposit = d_prosperous_mesa
+			add_deposit = d_ancient_battlefield
+			add_deposit = d_uw_world_end_alter
+			add_deposit = d_uw_impossible_black_mesa
+			add_district = district_city
+			add_district = district_city
+			add_district = district_generator
+			add_district = district_generator
+			add_district = district_mining
+			add_district = district_mining
+			add_district = district_mining
+			add_district = district_mining
+			add_district = district_farming
+			add_district = district_farming
+			add_district = district_farming
+			add_district = district_farming
+			while = {
+				count = 40
+				create_pop = {
+					species = owner_main_species
+				}
+			}
+			
+		}
+        #country_event = { id = saouw.4 }
+	}
+}
+
+country_event = {
+	id = saouw.4
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				has_planet_flag = uw_moon
+			}
+			set_owner = event_target:saouw_country
+			clear_deposits
+			remove_all_buildings
+			add_building = building_capital
+			add_building = building_foundry_2
+			add_building = building_factory_2
+			add_deposit = d_fertile_lands
+			add_deposit = d_fertile_lands
+			add_deposit = d_fertile_lands
+			add_deposit = d_prosperous_mesa
+			add_deposit = d_prosperous_mesa
+			add_deposit = d_savage_wildlands
+			add_deposit = d_savage_wildlands
+			add_deposit = d_frozen_gas_lake
+			add_deposit = d_crystal_forest
+			while = {
+				count = 15
+				create_pop = {
+					species = owner_main_species
+				}
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = saouw.5
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				owner = { has_country_flag = uw_seleted }
+			}
+			owner = { save_event_target_as = saouw_country }
+			
+			solar_system = {
+				random_system_planet = {
+					limit = { 
+						has_planet_flag = uw_moon
+					}
+					set_owner = event_target:saouw_country
+					clear_deposits = yes
+					remove_all_buildings = yes
+					add_building = building_capital
+					add_building = building_foundry_2
+					add_building = building_factory_2
+					add_deposit = d_fertile_lands
+					add_deposit = d_fertile_lands
+					add_deposit = d_fertile_lands
+					add_deposit = d_prosperous_mesa
+					add_deposit = d_prosperous_mesa
+					add_deposit = d_savage_wildlands
+					add_deposit = d_savage_wildlands
+					add_deposit = d_frozen_gas_lake
+					add_deposit = d_crystal_forest
+					while = {
+						count = 15
+						create_pop = {
+							species = owner_main_species
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#######################################################################
+#subspace broadcast event
+event = {
+	id = saouw.10
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		mid_game_years_passed = 10
+	}
+	
+	immediate = {
+		every_country = {
+			limit = {
+				AND{
+					has_country_flag = uw_seleted
+					has_country_flag = uw_site_finished
+				}
+            }
+            country_event = { id = saouw.11 }
+		}
+	}
+}
+
+country_event = {
+	id = saouw.11
+	is_triggered_only = yes
+	
+	title = saouw.11.title
+	desc = saouw.11.desc
+	picture = GFX_evt_decryption
+	show_sound = event_default	
+	fire_only_once = yes
+	
+	immediate = {
+		set_country_flag = uw_t2_tech_enabled
+		add_research_option = tech_uw_psi_weapon_gun_small
+		add_research_option = tech_uw_psi_weapon_torp
+		add_research_option = tech_uw_psi_weapon_craft
+		add_research_option = tech_uw_psifactory
+		add_research_option = tech_uw_psi_army
+	}
+	
+	option = {
+		name = saouw.11.a
+	}
+}
+
+#######################################################################
+#try defrost a knight
+country_event = {
+	id = saouw.100
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		#add a general with synth module and a drawback
+		create_leader = {
+			name = random
+			species = owner_species
+			#gender = random
+			class = general
+			skill = random
+			set_age = 128
+			traits = {
+				trait = leader_trait_uw_oldsynth
+				trait = leader_trait_glory_seeker
+				trait = leader_trait_arrested_development
+				trait = leader_trait_general_erudite
+			}
+		}
+	}
+}
+
+#######################################################################
+#get relic event
+country_event = {
+	id = saouw.110
+	is_triggered_only = yes
+	title = "saouw.110.title"
+	desc = "saouw.110.desc"
+	picture = GFX_evt_saouw_artifact
+	show_sound = event_default	
+	fire_only_once = yes
+
+	immediate = {
+		enable_special_project = {
+			name = "UW_PARSE_RELIC"
+			owner = root.owner
+			location = event_target:uw_home
+		}
+	}
+	
+	option = {
+		name = saouw.110.a
+	}
+}
+
+#Success
+country_event = {
+	id = saouw.111
+	is_triggered_only = yes
+	
+	title = "saouw.111.title"
+	desc = "saouw.111.desc"
+	picture = GFX_evt_saouw_artifact
+	show_sound = event_default	
+
+	option = {
+		name = saouw.111.a
+		hidden_effect = {
+			owner = { add_relic = r_uw_relic_old_synth }
+		}
+	}
+}
+
+#Fail
+country_event = {
+	id = saouw.112
+	is_triggered_only = yes
+	
+	title = "saouw.112.title"
+	desc = "saouw.112.desc"
+	picture = GFX_evt_saouw_artifact
+	show_sound = event_default	
+
+	option = {
+		name = saouw.112.a
+	}
+}
+
+#######################################################################
+#refit cathedral give tech
+country_event = {
+	id = saouw.200
+	is_triggered_only = yes
+	hide_window = yes
+	fire_only_once = yes
+	
+	immediate = {
+		give_technology = {
+			tech = tech_uw_refit_church
+			message = yes
+		}
+	}
+}
+
+#refit cathedral build complete
+country_event = {
+	id = saouw.210
+	is_triggered_only = yes
+	title = "saouw.210.title"
+	desc = "saouw.210.desc"
+	picture = GFX_evt_news_room
+	show_sound = event_default
+	
+	option = {
+		name = saouw.210.a
+	}
+}
+
+#cathedral destroyed
+country_event = {
+	id = saouw.220
+	is_triggered_only = yes
+	title = "saouw.220.title"
+	desc = "saouw.220.desc"
+	picture = GFX_evt_city_ruins
+	show_sound = event_default
+	
+	option = {
+		name = saouw.220.a
+	}
+}
+#######################################################################
+#planetry decision
+
+country_event = {
+	id = saouw.300
+	is_triggered_only = yes
+	title = "saouw.300.title"
+	desc = "saouw.300.desc"
+	picture = GFX_evt_saouw_shipyard
+	show_sound = event_default
+	
+	option = {
+		name = saouw.300.a
+		trigger = {
+			owner = { has_technology = tech_corvettes }
+		}
+		allow = {
+			owner = { has_country_resource = { type = alloys amount > 800 } }
+			owner = { has_country_resource = { type = influence amount > 25 } }
+		}
+		hidden_effect = {
+			owner = {
+				add_resource = { influence = -25 }
+				add_resource = { alloys = -800 }
+				country_event = { id = saouw.301 days = 240 }
+			}
+			from = {
+				set_timed_planet_flag = { flag = saouw_shipyard_cooldown days = 240 }
+			}
+		}
+	}
+	
+	option = {
+		name = saouw.300.b
+		trigger = {
+			owner = { has_technology = tech_destroyers }
+		}
+		allow = {
+			owner = { has_country_resource = { type = alloys amount > 800 } }
+			owner = { has_country_resource = { type = influence amount > 25 } }
+		}
+		hidden_effect = {
+			owner = {
+				add_resource = { influence = -25 }
+				add_resource = { alloys = -800 }
+				country_event = { id = saouw.302 days = 240 }
+			}
+			from = {
+				set_timed_planet_flag = { flag = saouw_shipyard_cooldown days = 240 }
+			}
+		}
+	}
+	
+	option = {
+		name = saouw.300.c
+		trigger = {
+			owner = { has_technology = tech_cruisers }
+		}
+		allow = {
+			owner = { has_country_resource = { type = alloys amount > 800 } }
+			owner = { has_country_resource = { type = influence amount > 25 } }
+		}
+		hidden_effect = {
+			owner = {
+				add_resource = { influence = -25 }
+				add_resource = { alloys = -800 }
+				country_event = { id = saouw.303 days = 240 }
+			}
+			from = {
+				set_timed_planet_flag = { flag = saouw_shipyard_cooldown days = 240 }
+			}
+		}
+	}
+	
+	option = {
+		name = "EXIT"
+	}
+}
+
+country_event = {
+	id = saouw.301
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		create_fleet = {
+			effect = {
+				set_owner = prev
+				while = {
+					count = 8
+					create_ship = {
+						name = random
+						random_existing_design = corvette
+					}
+				}
+			}
+		}
+		last_created_fleet = { set_location = fromfrom }
+	}
+}
+
+country_event = {
+	id = saouw.302
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		create_fleet = {
+			effect = {
+				set_owner = prev
+				while = {
+					count = 4
+					create_ship = {
+						name = random
+						random_existing_design = destroyer
+					}
+				}
+			}
+		}
+		last_created_fleet = { set_location = fromfrom }
+	}
+}
+country_event = {
+	id = saouw.303
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		create_fleet = {
+			effect = {
+				set_owner = prev
+				while = {
+					count = 2
+					create_ship = {
+						name = random
+						random_existing_design = cruiser
+					}
+				}
+			}
+		}
+		last_created_fleet = { set_location = fromfrom }
+	}
+}
+
+##################################
+
+country_event = {
+	id = saouw.310
+	is_triggered_only = yes
+	title = "saouw.310.title"
+	desc = "saouw.310.desc"
+	picture = GFX_evt_saouw_shipyard2
+	show_sound = event_default
+	
+	option = {
+		name = saouw.310.a
+		trigger = {
+			owner = { has_technology = tech_corvettes }
+		}
+		allow = {
+			owner = { has_country_resource = { type = alloys amount > 2500 } }
+			owner = { has_country_resource = { type = influence amount > 25 } }
+		}
+		hidden_effect = {
+			owner = {
+				add_resource = { influence = -25 }
+				add_resource = { alloys = -2500 }
+				country_event = { id = saouw.311 days = 1800 }
+			}
+			from = {
+				set_timed_planet_flag = { flag = saouw_shipyard_cooldown days = 1800 }
+			}
+		}
+	}
+	
+	option = {
+		name = saouw.310.b
+		trigger = {
+			owner = { has_technology = tech_destroyers }
+		}
+		allow = {
+			owner = { has_country_resource = { type = alloys amount > 2500 } }
+			owner = { has_country_resource = { type = influence amount > 25 } }
+		}
+		hidden_effect = {
+			owner = {
+				add_resource = { influence = -25 }
+				add_resource = { alloys = -2500 }
+				country_event = { id = saouw.312 days = 1800 }
+			}
+			from = {
+				set_timed_planet_flag = { flag = saouw_shipyard_cooldown days = 1800 }
+			}
+		}
+	}
+	
+	option = {
+		name = saouw.310.c
+		trigger = {
+			owner = { has_technology = tech_cruisers }
+		}
+		allow = {
+			owner = { has_country_resource = { type = alloys amount > 2500 } }
+			owner = { has_country_resource = { type = influence amount > 25 } }
+		}
+		hidden_effect = {
+			owner = {
+				add_resource = { influence = -25 }
+				add_resource = { alloys = -2500 }
+				country_event = { id = saouw.313 days = 1800 }
+			}
+			from = {
+				set_timed_planet_flag = { flag = saouw_shipyard_cooldown days = 1800 }
+			}
+		}
+	}
+	
+	option = {
+		name = saouw.310.d
+		trigger = {
+			owner = { has_technology = tech_battleships }
+		}
+		allow = {
+			owner = { has_country_resource = { type = alloys amount > 2500 } }
+			owner = { has_country_resource = { type = influence amount > 25 } }
+		}
+		hidden_effect = {
+			owner = {
+				add_resource = { influence = -25 }
+				add_resource = { alloys = -2500 }
+				country_event = { id = saouw.314 days = 1800 }
+			}
+			from = {
+				set_timed_planet_flag = { flag = saouw_shipyard_cooldown days = 1800 }
+			}
+		}
+	}
+	
+	option = {
+		name = saouw.310.e
+		trigger = {
+			owner = { has_technology = tech_titans }
+		}
+		allow = {
+			owner = { has_country_resource = { type = alloys amount > 2500 } }
+			owner = { has_country_resource = { type = influence amount > 25 } }
+		}
+		hidden_effect = {
+			owner = {
+				add_resource = { influence = -25 }
+				add_resource = { alloys = -2500 }
+				country_event = { id = saouw.315 days = 1800 }
+			}
+			from = {
+				set_timed_planet_flag = { flag = saouw_shipyard_cooldown days = 1800 }
+			}
+		}
+	}
+	
+	option = {
+		name = "EXIT"
+	}
+}
+
+country_event = {
+	id = saouw.311
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		create_fleet = {
+			effect = {
+				set_owner = prev
+				while = {
+					count = 60
+					create_ship = {
+						name = random
+						random_existing_design = corvette
+					}
+				}
+			}
+		}
+		last_created_fleet = { set_location = fromfrom }
+	}
+}
+
+country_event = {
+	id = saouw.312
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		create_fleet = {
+			effect = {
+				set_owner = prev
+				while = {
+					count = 30
+					create_ship = {
+						name = random
+						random_existing_design = destroyer
+					}
+				}
+			}
+		}
+		last_created_fleet = { set_location = fromfrom }
+	}
+}
+
+country_event = {
+	id = saouw.313
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		create_fleet = {
+			effect = {
+				set_owner = prev
+				while = {
+					count = 16
+					create_ship = {
+						name = random
+						random_existing_design = cruiser
+					}
+				}
+			}
+		}
+		last_created_fleet = { set_location = fromfrom }
+	}
+}
+
+country_event = {
+	id = saouw.314
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		create_fleet = {
+			effect = {
+				set_owner = prev
+				while = {
+					count = 8
+					create_ship = {
+						name = random
+						random_existing_design = battleship
+					}
+				}
+			}
+		}
+		last_created_fleet = { set_location = fromfrom }
+	}
+}
+
+country_event = {
+	id = saouw.315
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		create_fleet = {
+			effect = {
+				set_owner = prev
+				while = {
+					count = 2
+					create_ship = {
+						name = random
+						random_existing_design = titan
+					}
+				}
+			}
+		}
+		last_created_fleet = { set_location = fromfrom }
+	}
+}
+
+#######################################################################
+#the legend returns
+country_event = {
+	id = saouw.1000
+	is_triggered_only = yes
+	
+	title = "saouw.1000.title"
+	desc = "saouw.1000.desc"
+	picture = GFX_evt_large_explosion
+	show_sound = event_default	
+	fire_only_once = yes
+	
+	option = {
+		#Let them drift, nothing happen
+		name = saouw.1000.a
+	}
+	
+	option = {
+		#Bring them in
+		name = saouw.1000.b
+		country_event = { id = saouw.1001 }
+		#enable_special_project = {
+		#	name = "UW_LEGEND_RETURN"
+		#	location = event_target:uw_ded_spacemob
+		#	owner = root.owner
+		#}
+	}
+}
+
+#Success
+country_event = {
+	id = saouw.1001
+	is_triggered_only = yes
+	
+	title = "saouw.1001.title"
+	desc = "saouw.1001.desc"
+	picture = GFX_evt_ship_in_orbit_3
+	show_sound = event_default	
+
+	option = {
+		#comms up
+		name = saouw.1001.a
+		country_event = { id = saouw.1100 }
+	}
+}
+
+#Fail
+country_event = {
+	id = saouw.1002
+	is_triggered_only = yes
+	
+	title = "saouw.1002.title"
+	desc = "saouw.1002.desc"
+	picture = GFX_evt_ship_in_orbit_2
+	show_sound = event_default	
+
+	option = {
+		name = saouw.1002.a
+	}
+}
+
+#imconing transmission
+country_event = {
+	id = saouw.1100
+	is_triggered_only = yes
+	
+	title = "saouw.1100.name"
+	desc = "saouw.1100.desc"
+	trackable = yes
+	
+	diplomatic = yes
+
+	picture_event_data = {
+		#room is in cityset folder
+		room = no_video_feed_room
+	}
+	
+	option = {
+		#who exactly are you
+		name = saouw.1100.a
+		response_text = saouw.1100.a.response
+		is_dialog_only = yes
+	}
+	
+	option = {
+		#why did you end up there
+		name = saouw.1100.b
+		response_text = saouw.1100.b.response
+		is_dialog_only = yes
+	}
+	
+	option = {
+		#what you want
+		name = saouw.1100.c
+		response_text = saouw.1100.c.response
+		is_dialog_only = yes
+	}
+	
+	option = {
+		#dismiss
+		name = saouw.1100.d
+		owner = {
+			country_event = { id = saouw.1200 days = 720 }
+		}
+		is_dialog_only = yes
+	}
+}
+
+#gain leaders
+country_event = {
+	id = saouw.1200
+	is_triggered_only = yes
+	
+	title = "saouw.1200.title"
+	desc = "saouw.1200.desc"
+	picture = GFX_evt_diplomatic_visit
+	show_sound = event_default
+	fire_only_once = yes
+	
+	immediate = {
+		#add general 1
+		create_leader = {
+			name = "Ronye Arabel"
+			species = owner_species
+			gender = female
+			class = general
+			skill = random
+			set_age = 30
+			traits = {
+				trait = leader_trait_glory_seeker
+				trait = leader_trait_restrained
+			}
+		}
+		last_created_leader = { change_leader_portrait = fluxlight42 }
+		
+		#add general 2
+		create_leader = {
+			name = "Tiese Shtolienen"
+			species = owner_species
+			gender = female
+			class = general
+			skill = random
+			set_age = 30
+			traits = {
+				trait = leader_trait_glory_seeker
+				trait = leader_trait_restrained
+			}
+		}
+		last_created_leader = { change_leader_portrait = fluxlight59 }
+		
+		#add governer
+		create_leader = {
+			name = "Selka Zuberg"
+			species = owner_species
+			gender = female
+			class = governor
+			skill = random
+			set_age = 30
+			traits = {
+				trait = leader_trait_governor_psionic
+				trait = leader_trait_intellectual
+			}
+		}
+		last_created_leader = { change_leader_portrait = fluxlight50 }
+	}
+	
+	option = {
+		name = saouw.1200.a
+		owner = { country_event = { id = saouw.200 } }
+	}
+}
+
+#######################################################################
+#new age synth
+country_event = {
+	id = saouw.2000
+	is_triggered_only = yes
+	title = "saouw.2000.title"
+	desc = "saouw.2000.desc"
+	picture = GFX_evt_unity_symbol
+	show_sound = event_default
+	
+	immediate = {
+		remove_relic = r_uw_relic_old_synth
+		add_relic = r_uw_relic_new_synth
+	}
+	
+	option = {
+		name = saouw.2000.a
+	}
+}
+
+#######################################################################
+#relic events
+country_event = {
+	id = saouw.2100
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				owner = { NOT = { has_country_flag = uw_relic_1 } }
+			}
+			create_leader = {
+				name = "Fanatio Synthesis Two"
+				species = owner_species
+				gender = female
+				class = governor
+				skill = random
+				set_age = 430
+				traits = {
+					trait = leader_trait_uw_oldsynth
+					trait = leader_trait_army_veteran
+				}
+			}
+			last_created_leader = { change_leader_portrait = fluxlight18 }
+			set_country_flag = uw_relic_1
+		} else_if = {
+			limit = {
+				owner = { has_country_flag = uw_relic_1 }
+			}
+			create_leader = {
+				name = "Deusolbert Synthesis Seven"
+				species = owner_species
+				gender = female
+				class = general
+				skill = random
+				set_age = 340
+				traits = {
+					trait = leader_trait_uw_oldsynth
+					trait = leader_trait_glory_seeker
+					trait = leader_trait_restrained
+				}
+			}
+			last_created_leader = { change_leader_portrait = fluxlight13 }
+			set_country_flag = uw_relic_2
+		} else_if = {
+			limit = {
+				owner = { has_country_flag = uw_relic_2 }
+			}
+			create_leader = {
+				name = "Scheta Synthesis Twelve"
+				species = owner_species
+				gender = female
+				class = envoy
+				skill = random
+				set_age = 320
+				traits = {
+					trait = leader_trait_uw_oldsynth
+				}
+			}
+			last_created_leader = { change_leader_portrait = fluxlight49 }
+			set_country_flag = uw_relic_3
+		} else_if = {
+			limit = {
+				owner = { has_country_flag = uw_relic_3 }
+			}
+			create_leader = {
+				name = "Renly Synthesis Twenty-Seven"
+				species = owner_species
+				gender = female
+				class = admiral
+				skill = random
+				set_age = 115
+				traits = {
+					trait = leader_trait_uw_oldsynth
+					trait = leader_trait_butcher
+				}
+			}
+			last_created_leader = { change_leader_portrait = fluxlight39 }
+			set_country_flag = uw_relic_4
+		} else = {
+			create_leader = {
+				name = random
+				species = owner_species
+				#gender = random
+				class = random
+				skill = random
+				set_age = 128
+				traits = {
+					trait = leader_trait_uw_oldsynth
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = saouw.2200
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		create_leader = {
+			name = random
+			species = owner_species
+			#gender = random
+			class = random
+			skill = random
+			set_age = 35
+			traits = {
+				trait = leader_trait_uw_newsynth
+			}
+		}
+	}
+}

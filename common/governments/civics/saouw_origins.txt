@@ -1,0 +1,46 @@
+origin_saouw = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_saouw.dds"
+	picture = GFX_origin_saouw
+	starting_colony = pc_continental
+	habitability_preference = pc_continental
+	advanced_start = yes
+
+	possible = {
+		authority = {
+			OR = {
+				text = civic_tooltip_dem_oli
+				value = auth_democratic
+				value = auth_oligarchic
+			}
+		}
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_xenophobe
+				value = ethic_xenophobe
+				value = ethic_fanatic_xenophobe
+			}
+			OR = {
+				text = civic_tooltip_spiritualist
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_imperial_cult
+				value = civic_slaver_guilds
+				value = civic_fanatic_purifiers
+				value = civic_death_cult
+			}
+		}
+	}
+
+	description = "origin_tooltip_saouw_effects"
+	#traits = { trait = trait_saouw }
+	initializers = { saouw_system_initializer }
+	flags = {
+		custom_start_screen
+		uw_seleted
+	}
+}

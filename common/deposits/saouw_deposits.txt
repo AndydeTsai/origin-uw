@@ -1,0 +1,34 @@
+## Possible Deposit Variables ##
+# resources, resource and amount
+# potential trigger (planet scope)
+# planet_modifier - applied to planet only when deposit blocker has been cleared
+# constant_modifier - applied to planet always
+# blocker = <key/any/none> - default any
+# station = station class in orbit to gather
+
+d_uw_world_end_alter = {
+	is_for_colonizeable = yes
+	icon = d_uw_world_end_alter
+	
+	planet_modifier = { 
+		job_operating_system_researcher_add = 1
+		job_operating_system_researcher_per_pop = 0.025 #1 per 40
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_uw_impossible_black_mesa = {
+	is_for_colonizeable = yes
+	icon = d_uw_impossible_black_mesa
+	
+	planet_modifier = { 
+		district_farming_max = -2
+	}
+	
+	drop_weight = {
+		weight = 0
+	}
+}

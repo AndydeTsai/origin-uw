@@ -1,0 +1,93 @@
+civic_saouw_civic1 = {
+	description = "civic_saouw_civic1_effects"
+	icon = gfx/interface/icons/governments/civics/civic_saouw_civic1.dds
+	playable = { always = no }
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		authority = {
+			OR = {
+				text = civic_tooltip_dem_oli
+				value = auth_democratic
+				value = auth_oligarchic
+			}
+		}
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_xenophobe
+				value = ethic_xenophobe
+				value = ethic_fanatic_xenophobe
+			}
+			OR = {
+				text = civic_tooltip_spiritualist
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+		}
+		civics = {
+			#value = civic_saouw
+			NOT = {
+				value = civic_imperial_cult
+				value = civic_slaver_guilds
+				value = civic_fanatic_purifiers
+				value = civic_death_cult
+			}
+		}
+	}
+	modification = no
+	random_weight = { base = 0 }
+	modifier = {
+		intel_decryption_add = 2
+		intel_encryption_add = 2
+		species_empire_size_mult = -0.10
+		trade_value_mult = 0.05
+	}
+}
+
+civic_saouw_civic2 = {
+	description = "civic_saouw_civic2_effects"
+	icon = gfx/interface/icons/governments/civics/civic_saouw_civic2.dds
+	playable = { always = no }
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		authority = {
+			OR = {
+				text = civic_tooltip_dem_oli
+				value = auth_democratic
+				value = auth_oligarchic
+			}
+		}
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_xenophobe
+				value = ethic_xenophobe
+				value = ethic_fanatic_xenophobe
+			}
+			OR = {
+				text = civic_tooltip_spiritualist
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+		}
+		civics = {
+			#value = civic_saouw
+			NOT = {
+				value = civic_imperial_cult
+				value = civic_slaver_guilds
+				value = civic_fanatic_purifiers
+				value = civic_death_cult
+			}
+		}
+	}
+	modification = no
+	random_weight = { base = 0 }
+	modifier = {
+		planet_stability_add = 25
+		planet_crime_no_happiness_add = -45
+	}
+}
