@@ -1,0 +1,50 @@
+spriteTypes = {
+	spriteType = {
+		name = "SMALL_UW_P_LASER"
+		textureFile = "gfx/interface/icons/ship_parts/saouw_pd.dds"
+	}
+	spriteType = {
+		name = "SMALL_UW_S_LASER"
+		textureFile = "gfx/interface/icons/ship_parts/saouw_laser.dds"
+	}
+	spriteType = {
+		name = "SMALL_UW_M_LASER"
+		textureFile = "gfx/interface/icons/ship_parts/saouw_laser.dds"
+	}
+	spriteType = {
+		name = "SMALL_UW_L_LASER"
+		textureFile = "gfx/interface/icons/ship_parts/saouw_laser.dds"
+	}
+	spriteType = {
+		name = "SMALL_UW_XL_LASER"
+		textureFile = "gfx/interface/icons/ship_parts/saouw_xl_laser.dds"
+	}
+	spriteType = {
+		name = "SMALL_UW_T_LASER"
+		textureFile = "gfx/interface/icons/ship_parts/saouw_t_laser.dds"
+	}
+	spriteType = {
+		name = "TORPEDO_UW_G_LASER"
+		textureFile = "gfx/interface/icons/ship_parts/saouw_torp.dds"
+	}
+	spriteType = {
+		name = "HANGAR_UW_H_LASER"
+		textureFile = "gfx/interface/icons/ship_parts/saouw_fighter.dds"
+	}
+	spriteType = {
+		name = "SAOUW_REACTOR"
+		textureFile = "gfx/interface/icons/ship_parts/saouw_reactor.dds"
+	}
+	spriteType = {
+		name = "SAOUW_SHIELD"
+		textureFile = "gfx/interface/icons/ship_parts/saouw_shield.dds"
+	}
+	spriteType = {
+		name = "SAOUW_ARMOR"
+		textureFile = "gfx/interface/icons/ship_parts/saouw_armor.dds"
+	}
+	spriteType = {
+		name = "SAOUW_THRUSTER"
+		textureFile = "gfx/interface/icons/ship_parts/saouw_thruster.dds"
+	}
+}

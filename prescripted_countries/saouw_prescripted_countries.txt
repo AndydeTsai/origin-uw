@@ -1,0 +1,70 @@
+underworld = {
+	name = "The Great Human Alliance"
+	ship_prefix = "CHAF"
+	spawn_enabled = no
+	
+	species = {
+		class = "fluxlight"
+		portrait = "fluxlight"
+		name = "Human"
+		plural = "Human"
+		adjective = "Human"
+		name_list = "HUM3"
+		trait="trait_conformists"
+		trait="trait_strong"
+		trait="trait_traditional"
+		trait="trait_sedentary"
+		trait="trait_unruly"
+	}
+	
+	room = "centralia_room"
+	ethic = "ethic_fanatic_spiritualist"
+	ethic = "ethic_militarist"
+	authority = "auth_oligarchic"
+	civics = {
+		"civic_distinguished_admiralty"
+		"civic_warrior_culture"
+	}
+	government = "gov_elective_monarchy"
+	initializer = "saouw_system_initializer"
+	origin = "origin_saouw"
+	flags = {
+		"uw_seleted"
+		"custom_start_screen"
+	}
+	
+	adjective = "Human"
+	planet_name = "Cardinal"
+	planet_class = "pc_continental"
+	system_name = "System Root"
+	graphical_culture = "mammalian_01"
+	city_graphical_culture = "mammalian_01"
+	
+	empire_flag = {
+		icon= {
+			category = "saouw"
+			file = "UW_flag.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"black"
+			"black"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "Alorion Heraanz"
+		gender = male
+		portrait = "fluxlight15"
+		texture = 0
+		hair = 0
+		clothes = 0
+		ruler_title = "President"
+		leader_class = ruler
+	}
+}

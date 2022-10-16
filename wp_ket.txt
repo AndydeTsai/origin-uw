@@ -1,0 +1,56 @@
+component_set = {
+	key = "SMALL_UW_P_LASER"
+	
+	icon = "GFX_uw_ship_part_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SMALL_UW_S_LASER"
+	
+	icon = "GFX_uw_ship_part_1"
+	icon_frame = 2
+}
+
+component_set = {
+	key = "SMALL_UW_M_LASER"
+	
+	icon = "GFX_uw_ship_part_1"
+	icon_frame = 3
+}
+
+component_set = {
+	key = "SMALL_UW_L_LASER"
+	
+	icon = "GFX_uw_ship_part_1"
+	icon_frame = 4
+}
+
+component_set = {
+	key = "SMALL_UW_XL_LASER"
+	
+	icon = "GFX_uw_ship_part_1"
+	icon_frame = 5
+}
+
+component_set = {
+	key = "SMALL_UW_T_LASER"
+	
+	icon = "GFX_uw_ship_part_1"
+	icon_frame = 6
+}
+
+component_set = {
+	key = "TORPEDO_UW_G_LASER"
+	
+	icon = "GFX_uw_ship_part_1"
+	icon_frame = 7
+}
+
+component_set = {
+	key = "HANGAR_UW_H_LASER"
+	
+	icon = "GFX_uw_ship_part_1"
+	icon_frame = 8
+}
+

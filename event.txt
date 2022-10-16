@@ -1,0 +1,48 @@
+namespace = saouw2
+
+
+
+#subspace broadcast event
+event = {
+	id = saouw2.1
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		mid_game_years_passed >= 10
+	}
+	
+	immediate = {
+		every_country = {
+			limit = {
+				AND{
+					has_country_flag = uw_seleted
+					has_country_flag = uw_site_finished
+				}
+            }
+            country_event = { id = saouw2.100 }
+		}
+	}
+}
+
+country_event = {
+	id = saouw2.100
+	is_triggered_only = yes
+	
+	title = saouw2.100.title
+	desc = saouw2.100.desc
+	
+	immediate = {
+		set_country_flag = uw_t2_tech_enabled
+		add_research_option = tech_uw_psi_weapon_gun_small
+		#add_research_option = tech_uw_psi_weapon_gun_large
+		add_research_option = tech_uw_psi_weapon_torp
+		add_research_option = tech_uw_psi_weapon_craft
+		add_research_option = tech_uw_psi_factory
+		add_research_option = tech_uw_psi_army
+	}
+	
+	option = {
+		name = saouw2.100.a
+	}
+}

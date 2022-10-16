@@ -1,0 +1,58 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_saouw_arc_event_1"
+		textureFile = "gfx/event_pictures/saouw1.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_saouw_arc_event_2"
+		textureFile = "gfx/event_pictures/saouw2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_saouw_arc_event_4"
+		textureFile = "gfx/event_pictures/saouw4.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_saouw_arc_event_5"
+		textureFile = "gfx/event_pictures/saouw5.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_saouw_arc_event_6"
+		textureFile = "gfx/event_pictures/saouw6.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_saouw_arc_event_7"
+		textureFile = "gfx/event_pictures/saouw7.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_evt_saouw_artifact"
+		textureFile = "gfx/event_pictures/saouwartifact.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_evt_saouw_shipyard"
+		textureFile = "gfx/event_pictures/saouwshipyard.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_saouw_shipyard2"
+		textureFile = "gfx/event_pictures/saouwshipyard2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}

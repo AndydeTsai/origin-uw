@@ -1,0 +1,17 @@
+Start the game as the iconic simulated civilization of Underworld from the famous anime Sword Art Online Alicization, explore the secrete of universe both inward and outward, and prepare the inevitable confrontation of another inter-dimensional war.
+
+[h1]Mod featuring :[/h1]
+ - Unique buildings with huge early game bonus, but will be lost permanently if homeworld is compromised.
+ - Planetry shipyard capable of building large ships for your empire's navy.
+ - Digsite for uncovering lost secrete of the past.
+ - Unique events that give even more bonus.
+
+[h1]Planned future updates :[/h1]
+ - Tech and ship components about zro dust.
+ - Even more events and bonus.
+ - Endgame crisis events.
+ - Intelligence system related features(after Stellaris Namesis update).
+
+[h1]Note :[/h1]
+ - The origin is not locked with any limitation, you can use it with any species you want, but you might prefer to use with any SAO species pack for maximum immersion experience.
+ - Localization for Traditional Chinese and Japanese will come in near future, you can also submit localization file in pinned thread.

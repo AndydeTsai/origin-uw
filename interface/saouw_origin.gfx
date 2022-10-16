@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_origin_saouw"
+		textureFile = "gfx/event_pictures/origins/saouw.dds"
+	}
+
+}

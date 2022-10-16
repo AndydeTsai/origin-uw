@@ -1,0 +1,36 @@
+CURRENT CONTENT
+-----------------------------------------------------------------------------------------
+ascension perk - 				code[DONE] - 	events[DONE] - 		gfx icon[DONE]
+building - 						code[DONE] - 	gfx icon[DONE]
+country flag - 					gfx icon[DONE]
+dig site - 						code[DONE] - 	events[DONE] - 		gfx backdrop[DONE]
+events - 						code[DONE] - 	gfx banner[DONE]
+gfx codes						code[DONE]
+language file - 				code[DONE]
+leader room - 					code[DONE] - 	gfx background[DONE]
+leader traits - 				code[DONE] -	gfx icon[DONE]
+origin - 						code[DONE] - 	gfx background[DONE]
+planetry decision(shipyard) - 	code[DONE] - 	gfx icon[DONE]
+planetry feature - 				code[DONE] - 	gfx icon[DONE]
+pop job - 						code[DONE] - 	gfx icon[DONE]
+pre scripted contry - 			code[DONE]
+relic - 						code[DONE] - 	events[DONE] - 		gfx icon[DONE]
+solar system init -				code[DONE]
+special project - 				code[DONE]
+species - 						code[DONE] - 	gfx leader portraits[DONE]
+start screen message - 			code[DONE]
+tech - 							code[DONE] -	gfx icon[DONE]
+#########################################################################################
+STELLARIS UPDATE 3.0 DICK
+-----------------------------------------------------------------------------------------
+update everything to be compatible - it just works
+fixing special projects - workaround used, special project shelved
+figure out second planet - still broken
+re-balance events - done
+#########################################################################################
+FUTURE CONTENT
+-----------------------------------------------------------------------------------------
+mid game events(not working) - code - gfx
+ship components(broken, no gfx) - code - gfx
+end game crisis(postponed) - code - gfx
+intelligence/spy system(namesis update) - code - ???

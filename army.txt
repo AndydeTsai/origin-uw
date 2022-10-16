@@ -1,0 +1,139 @@
+#Defensive armies can't transport of the planet
+#maintenance is directly scripted here. 0.25 translates to 0.25 monthly cost (excluding other upkeep modifiers)
+#morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
+
+# Assault Armies
+saouw_army_fighter = {
+	damage = 2.00
+	health = 2.00
+	morale = 1.50
+	morale_damage = 2.50
+	collateral_damage = 0.50
+	war_exhaustion = 1.00
+	time = 180
+	icon_frame = 5
+	prerequisites = { "tech_uw_psi_army" }
+	resources = {
+		category = armies
+		cost = {
+			alloys = 100
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	show_tech_unlock_if = { 
+		OR = {
+			NOT = { has_authority = auth_machine_intelligence }
+			has_valid_civic = civic_machine_assimilator
+		}
+	}
+	potential = {
+		from = {
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+				is_sapient = no
+			}
+		}
+		owner = {
+			OR = {
+				NOT = { has_authority = auth_machine_intelligence }
+				has_valid_civic = civic_machine_assimilator
+			}
+		}
+	}
+}
+
+saouw_army_knight = {
+	damage = 1.50
+	health = 1.50
+	morale = 1.50
+	morale_damage = 1.50
+	collateral_damage = 1.00
+	war_exhaustion = 1.00
+	time = 90
+	icon_frame = 3
+	prerequisites = { "tech_uw_psi_army" }
+	resources = {
+		category = armies
+		cost = {
+			minerals = 1000
+			alloys = 50
+		}
+
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	show_tech_unlock_if = { 
+		OR = {
+			NOT = { has_authority = auth_machine_intelligence }
+			has_valid_civic = civic_machine_assimilator
+		}
+	}
+	potential = {
+		from = {
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+				is_sapient = no
+			}
+		}
+		owner = {
+			OR = {
+				NOT = { has_authority = auth_machine_intelligence }
+				has_valid_civic = civic_machine_assimilator
+			}
+		}
+	}
+}
+
+saouw_army_dragon = {
+	damage = 4.00
+	health = 1.00
+	morale = 2.00
+	morale_damage = 2.50
+	collateral_damage = 2.00
+	war_exhaustion = 2.00
+	time = 360
+	icon_frame = 14
+	prerequisites = { "tech_uw_psi_army" }
+	resources = {
+		category = armies
+		cost = {
+			minerals = 1000
+			alloys = 50
+			food = 500
+		}
+
+		upkeep = {
+			energy = 10
+		}
+	}
+
+	show_tech_unlock_if = { 
+		OR = {
+			NOT = { has_authority = auth_machine_intelligence }
+			has_valid_civic = civic_machine_assimilator
+		}
+	}
+	potential = {
+		from = {
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+				is_sapient = no
+			}
+		}
+		owner = {
+			OR = {
+				NOT = { has_authority = auth_machine_intelligence }
+				has_valid_civic = civic_machine_assimilator
+			}
+		}
+	}
+}
